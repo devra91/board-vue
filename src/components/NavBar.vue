@@ -17,8 +17,8 @@
         >Board</router-link
       >
     </li>
-    <!-- <li v-if="authenticated">{{ user.name }} {{ user.email }}</li> -->
-    <!-- <template v-else>
+    <li v-if="authenticated">{{ user.name }}</li>
+    <template v-else>
       <li>
         <router-link
           :to="{
@@ -35,7 +35,7 @@
           >Register</router-link
         >
       </li>
-    </template> -->
+    </template>
   </ul>
 </template>
 

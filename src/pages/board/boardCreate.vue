@@ -5,7 +5,7 @@
       <input v-model="form.sTitle" placeholder="제목" />
       <input v-model="form.sContext" placeholder="내용" />
     </div>
-    <button @click="createPost(form)">submit</button>
+    <button @click="create">submit</button>
   </div>
 </template>
 
@@ -33,7 +33,14 @@ export default {
     ...mapActions({
       createPost: "board/createPost"
       //   updatePost: "board/updatePost",
-    })
-  }
+    }),
+    create() {
+        this.createPost(this.form);
+        this.$router.push({
+        path: `/board`,
+      });
+    }
+  },
+      
 };
 </script>
