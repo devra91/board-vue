@@ -46,8 +46,6 @@ export default {
   max-width: 500px;
   margin: auto;
 }
-.wrap {
-}
 .Box {
   display: flex;
   align-items: center;
