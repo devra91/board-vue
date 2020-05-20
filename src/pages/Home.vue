@@ -1,6 +1,6 @@
 <template>
   <div id="home">
-      Home
+    Log in to write post
   </div>
 </template>
 
@@ -9,10 +9,10 @@ import Navbar from "@/components/Navbar";
 
 export default {
   components: {
-    Navbar,
+    Navbar
   },
-  name: 'App'
-}
+  name: "App"
+};
 </script>
 
 <style>
@@ -22,7 +22,7 @@ export default {
   padding: 0;
 }
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -60,6 +60,9 @@ const routes = [
     path: "/board/detail/:contentId?",
     name: "board-detail",
     component: BoardDetail,
+    meta: {
+      requiresAuth: true,
+    },
   },
   {
     path: "*",
