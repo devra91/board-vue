@@ -6,6 +6,7 @@ import Login from "../pages/Login.vue";
 import BoardList from "../pages/board/boardList.vue";
 import BoardCreate from "../pages/board/boardCreate.vue";
 import BoardDetail from "../pages/board/boardDetail.vue";
+import BoardUpdate from "../pages/board/boardUpdate.vue";
 import ErrorPage from "../pages/ErrorPage.vue";
 
 Vue.use(Router)
@@ -47,7 +48,16 @@ const routes = [
     props: true,
   },
   {
-    path: "/board/detail/:contentId",
+    path: "/board/update/:contentId?",
+    name: "board-update",
+    component: BoardUpdate,
+    meta: {
+      requiresAuth: true,
+    },
+    props: true,
+  },
+  {
+    path: "/board/detail/:contentId?",
     name: "board-detail",
     component: BoardDetail,
   },
